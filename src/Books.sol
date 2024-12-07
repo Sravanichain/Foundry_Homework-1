@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: UNLICENSED
-
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
 
-import "chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
-import {console} from "forge-std/Test.sol";
-
 contract Books {
+
     address owner;
 
     struct Book {
@@ -16,8 +13,8 @@ contract Books {
 
     Book public book;
 
-    modifier onlyOwner() {
-        require(msg.sender == owner, "You are not the Owner");
+    modifier onlyOwner {
+        require(msg.sender==owner,"You are not the Owner");
         _;
     }
 
@@ -35,4 +32,5 @@ contract Books {
     function get_book() public view returns (Book memory) {
         return book;
     }
+
 }
