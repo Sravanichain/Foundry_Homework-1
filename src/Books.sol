@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 
 pragma solidity 0.8.13;
+import "@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol";
+import {console} from "forge-std/Test.sol";
 
 contract Books {
     address owner;
