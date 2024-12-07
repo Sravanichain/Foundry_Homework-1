@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.13;
 
-import "@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol";
+import "chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import {console} from "forge-std/Test.sol";
 
 contract Books {
