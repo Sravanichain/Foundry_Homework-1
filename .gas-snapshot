@@ -1,0 +1,2 @@
+BooksTest:test_get_book() (gas: 20227)
+BooksTest:test_updatePages() (gas: 23905)
