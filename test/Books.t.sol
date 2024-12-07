@@ -9,21 +9,18 @@ contract BooksTest is Test {
     Books.Book public book;
 
     function setUp() public {
-     
-        books = new Books("Programming Foundry", "Gowtham", 100);
+        books = new Books("Programming Foundry", "Sai Ganesh", 100);
         console.log("Books contract deployed at address:", address(books));
     }
 
     function test_true() public pure {
-     
         assert(true);
     }
 
     function test_get_book() public {
-
         book = books.get_book();
         assertEq(book.title, "Programming Foundry");
-        assertEq(book.author, "Gowtham");
+        assertEq(book.author, "Sai Ganesh");
         assertEq(book.pages, 100);
     }
 

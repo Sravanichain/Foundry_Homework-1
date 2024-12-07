@@ -8,7 +8,6 @@ contract Deploy is Script {
     Books public books;
 
     function run() public {
-        books = new Books("Programming Foundry", "Gowtham", 100);
-      
+        books = new Books("Programming Foundry", "Sai Ganesh", 100);
     }
 }

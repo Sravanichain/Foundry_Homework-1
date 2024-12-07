@@ -2,7 +2,6 @@
 pragma solidity 0.8.13;
 
 contract Books {
-
     address owner;
 
     struct Book {
@@ -13,8 +12,8 @@ contract Books {
 
     Book public book;
 
-    modifier onlyOwner {
-        require(msg.sender==owner,"You are not the Owner");
+    modifier onlyOwner() {
+        require(msg.sender == owner, "You are not the Owner");
         _;
     }
 
@@ -32,5 +31,4 @@ contract Books {
     function get_book() public view returns (Book memory) {
         return book;
     }
-
 }
