@@ -24,7 +24,7 @@ contract TestBooks is Test {
         assertEq(book.pages, 100);
     }
 
-    function test_updatePages() public {
+    function test_update_pages() public {
         books.update_pages(200);
         book = books.get_book();
         assertEq(book.pages, 200);
