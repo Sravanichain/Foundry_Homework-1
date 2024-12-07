@@ -1,6 +1,6 @@
 pragma solidity 0.8.13;
 
-import {Test} from "forge-std/Test.sol";
+import {Test, console} from "forge-std/Test.sol";
 import {Books} from "../src/Books.sol";
 
 contract BooksTest is Test {
