@@ -9,7 +9,7 @@ contract TestBooks is Test {
     Books.Book public book;
 
     function setUp() public {
-        books = new Books("Programming Foundry", "Sruthi cheruku", 100);
+        books = new Books("Programming Foundry", "Sravani", 100);
         console.log("Books contract deployed at address:", address(books));
     }
 
@@ -20,7 +20,7 @@ contract TestBooks is Test {
     function test_get_book() public {
         book = books.get_book();
         assertEq(book.title, "Programming Foundry");
-        assertEq(book.author, "Sruthi cheruku");
+        assertEq(book.author, "Sravani");
         assertEq(book.pages, 100);
     }
 
