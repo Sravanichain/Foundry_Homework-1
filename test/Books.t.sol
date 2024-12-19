@@ -11,7 +11,7 @@ contract TestBooks is Test{
 
 
     function setUp() public {
-        midterm = new Books("Programming Foundry", "Ellan", 100);
+        midterm = new Books("Programming Foundry", "Sravani", 100);
         console.log("Midterm contract Deployed at:",address(midterm));
     }
 
@@ -22,7 +22,7 @@ contract TestBooks is Test{
     function test_get_book() public{
         book=midterm.get_book();
         assertEq(book.pages,100);
-        assertEq(book.author,"Ellan");
+        assertEq(book.author,"Sravani");
         assertEq(book.title,"Programming Foundry");
     }
 
